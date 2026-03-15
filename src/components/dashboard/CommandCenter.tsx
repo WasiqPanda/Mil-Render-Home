@@ -233,11 +233,6 @@ export default function CommandCenter() {
   const [bgIndex, setBgIndex] = useState(0);
 
   const backgrounds = [
-    'https://storage.googleapis.com/generativeai-downloads/images/sxs/ais-dev-p6dtcdp4ccj3uxh3sigzft-50128653243.asia-southeast1.run.app/65/0.png',
-    'https://storage.googleapis.com/generativeai-downloads/images/sxs/ais-dev-p6dtcdp4ccj3uxh3sigzft-50128653243.asia-southeast1.run.app/63/0.png',
-    'https://storage.googleapis.com/generativeai-downloads/images/sxs/ais-dev-p6dtcdp4ccj3uxh3sigzft-50128653243.asia-southeast1.run.app/63/1.png',
-    'https://storage.googleapis.com/generativeai-downloads/images/sxs/ais-dev-p6dtcdp4ccj3uxh3sigzft-50128653243.asia-southeast1.run.app/63/2.png',
-    'https://storage.googleapis.com/generativeai-downloads/images/sxs/ais-dev-p6dtcdp4ccj3uxh3sigzft-50128653243.asia-southeast1.run.app/63/3.png'
   ];
 
   useEffect(() => {
