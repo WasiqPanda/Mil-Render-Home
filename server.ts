@@ -34,7 +34,7 @@ async function startServer() {
   const httpServer = createServer(app);
   const io = new Server(httpServer, {
     cors: {
-      origin: "*",
+      origin: "https://mil-render-home-2.onrender.com",
       methods: ["GET", "POST"]
     }
   });
