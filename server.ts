@@ -87,6 +87,26 @@ async function startServer() {
 
   // --- AUTH ROUTES ---
 
+  app.get("/api/admin/join-requests",(req,res)=>{
+    try{
+      const rows=db.prepare('SELECT * FROM users WHERE hqId IS NOT NULL AND isApproved = 0').all();
+      res.json(rows);
+    }catch(e){
+      res.status(500).json({error:e.message});
+    }
+  });
+
+  app.post("/api/admin/approve-user",(req,res)=>{
+    const {userId}=req.body;
+    try{
+      db.prepare('UPDATE users SET isApproved = 1, status="active" WHERE id = ?').run(userId);
+      res.json({ok:true});
+    }catch(e){
+      res.status(500).json({error:e.message});
+    }
+  });
+
+
   const getRedirectUri = (req: any) => {
     if (process.env.APP_URL) {
       return `${process.env.APP_URL.replace(/\/$/, '')}/api/auth/google/callback`;
