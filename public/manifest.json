@@ -1,0 +1,22 @@
+{
+  "name": "Tactical Command System",
+  "short_name": "TacticalCmd",
+  "description": "Advanced Tactical Command & Control Interface",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c0a09",
+  "theme_color": "#ea580c",
+  "icons": [
+    {
+      "src": "https://picsum.photos/seed/tactical/192/192",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://picsum.photos/seed/tactical/512/512",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Military Patrol</string>
+    <string name="title_activity_main">Military Patrol</string>
+    <string name="package_name">com.patrol.app</string>
+    <string name="custom_url_scheme">com.patrol.app</string>
+
+    <!-- Firebase Integration Keys (Placeholders - Fill in your IDs) -->
+    <string name="google_app_id">YOUR_VITE_FIREBASE_APP_ID</string>
+    <string name="google_api_key">YOUR_VITE_FIREBASE_API_KEY</string>
+    <string name="firebase_database_url">https://YOUR_VITE_FIREBASE_PROJECT_ID.firebaseio.com</string>
+    <string name="project_id">YOUR_VITE_FIREBASE_PROJECT_ID</string>
+</resources>

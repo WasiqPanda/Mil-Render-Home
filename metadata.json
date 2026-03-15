@@ -1,0 +1,5 @@
+{
+  "name": "Military Grade Patrol Tracking",
+  "description": "Military-grade distributed command & control ecosystem for patrol operations.",
+  "requestFramePermissions": ["geolocation"]
+}
