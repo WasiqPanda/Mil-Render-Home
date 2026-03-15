@@ -1,3 +1,4 @@
+import express from "express";
 import 'dotenv/config';
 import express from "express";
 import cors from "cors";
@@ -30,6 +31,8 @@ async function startServer() {
   }
 
   const app = express();
+app.set("trust proxy", 1);
+
   app.set('trust proxy', 1); // Trust first proxy (nginx)
   const httpServer = createServer(app);
   const io = new Server(httpServer, {
