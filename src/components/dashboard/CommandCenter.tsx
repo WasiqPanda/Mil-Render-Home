@@ -466,7 +466,7 @@ export default function CommandCenter() {
     fetchData(); // Initial fetch
 
     // Socket.io Connection
-    const socket = io(BASE_URL || window.location.origin);
+    const socket = io();
 
     socket.on('connect', () => {
       console.log('Connected to realtime feed');
